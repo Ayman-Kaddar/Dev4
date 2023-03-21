@@ -49,7 +49,7 @@ function TemperatureAndDetails({ weather:
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row items-center justify-center
+            {/* <div className="flex flex-row items-center justify-center
                 space-x-2 text-white text-sm py-3">
                 <UilSun />
                 <p className="font-light">
@@ -70,7 +70,7 @@ function TemperatureAndDetails({ weather:
                 <p className="font-light">
                     Mínimo:<span className="font-medium ml-1">{`${temp_min.toFixed()}°`}</span>
                 </p>
-            </div>
+            </div> */}
         </div>
     )
 }
