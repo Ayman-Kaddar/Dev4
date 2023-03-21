@@ -1,13 +1,15 @@
-FROM node:lts-alpine3.15
+FROM node:alpine
 
 WORKDIR /app
 
-COPY package*.json /app
+COPY package*.json .
 
 RUN npm install
 
 COPY . .
 
-EXPOSE 8080
+RUN npm run build
 
-CMD ["npm", "run", "serve"]
+EXPOSE 3000
+
+CMD ["npm", "start"]
